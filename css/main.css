@@ -1,0 +1,253 @@
+
+body {
+    /* background-color: black;  -> prueba*/
+    /* Margen de la página (del elemento hacia afuera(?)*/
+    margin: 0;
+    /* Margen hacia adentro */
+    padding: 0;
+    /* Fuentes del texto */
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+/* **************************************************************************** */
+/* Navegación */
+header {
+    /* Quiero que sea el 100% de la pantalla */
+    /* background-color: blueviolet; */
+    width: 100%;
+    height: 60px;
+
+}
+
+.menu:hover {
+    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); */
+    border: 7px solid #f0f0f0;
+    border-radius: 100%;
+    background-color: #f0f0f0;
+}
+
+header nav {
+    /* Para justificar el texto */
+    display: flex;
+    /*Nos habilita usar tosos los elementos para alinear texto*/
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section {
+    /* background-color: cadetblue; */
+    width: 250px;
+    height: auto;
+    /* Para eliminar puntos */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    /*Para eliminar línea debajo del texto (link)*/
+}
+
+nav .nav-right-section a {
+    /* Cambia espacio entre cada elemento */
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+nav .nav-right-section a:hover {
+    text-decoration: underline;
+}
+
+nav .nav-right-section .menu {
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    background-size: contain;
+    width: 23px;
+    height: 23px;
+    background-repeat: no-repeat;
+    margin-left: 24px;
+}
+
+nav .nav-right-section img {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-left: 7px;
+}
+
+main {
+    margin-top: 80px;
+    text-align: center;
+}
+
+main .main-logo {
+    width: 530px;
+    /* Para centrar absolutamente gracias a los márgenes automáticos */
+    /* El elemento sigue centrado sin importat el tamaño de la pantalla por el margen auto */
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+main .main-logo img {
+
+    height: 90px;
+}
+
+main .main-input {
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-input-container {
+    border: 1px solid #dfe1e5;
+    border-radius: 225px;
+    /*borde del cuadrito (contenedor) */
+    width: 550px;
+}
+
+main .main-input input {
+    height: 45px;
+    border: none;
+    outline: none;
+    /* Valor menor que el contenedor poque si no se come el espacio */
+    width: 430px;
+    /*tamaño del input de texto(parecido aldel contenedor pero más pequeño)*/
+}
+
+/* Para poner sombreado cuando pasa mouse por ahí */
+
+main .main-input-container:hover{
+    box-shadow: 1px 1px 10px #dfe1e5;
+}
+
+main .main-input .search-icon {
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    /* Para adecuar al contenido */
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+main .main-input .micro-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    /* link mucro: https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg */
+    background-size: contain;
+    padding-right: 25px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+
+}
+
+main .main-input .cam-icon {
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    padding-left: 15px;
+    background-repeat: no-repeat;
+
+}
+
+main .btn-google {
+
+    padding-top: 30px;
+
+}
+
+main .buscar {
+    color: #48484c;
+    font-size: 14px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    border-color: transparent;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+main .buscar:hover{
+    border: 2px solid #e1e3e6;
+}
+
+main .suerte {
+    color: #48484c;
+    font-size: 14px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+    border-color: transparent;
+    font-family: 'Roboto', sans-serif;
+}
+
+main .suerte:hover{
+    border: 2px solid #e1e3e6;
+}
+
+main a:visited{
+    color: #48484c;
+}
+
+footer {
+    position: fixed;
+    /* left: 0;*/
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    color: #868994;
+
+}
+
+footer .mexico-section {
+    padding: auto;
+    font-size: 110%;
+    font-weight: 590;
+    padding-bottom: 12px;
+    padding-top: 7px;
+    list-style: none;
+    padding-left: 35px;
+    border-bottom: 1px solid #e3e4e7;
+}
+
+
+footer .sec-info{
+    padding-bottom: 16px;
+    padding-top: 3px;
+    padding-right: 10px;
+    padding-left: 13px;
+}
+
+footer .left-sec-foot {
+    font-size: 110%;
+    list-style: none;
+    float: left;
+    padding-left: 25px;
+    color: #868994;
+}
+
+footer .left-sec-foot a:hover {
+    text-decoration: underline;
+}
+
+footer .left-sec-foot a:visited {
+    color: #868994;
+}
+
+
+
+footer .right-sec-foot {
+    font-size: 110%;
+    list-style: none;
+    float: right;
+    padding-right: 27px;
+    color: #868994;
+}
+footer .right-sec-foot a:hover {
+    text-decoration: underline;
+}
+footer .right-sec-foot a:visited {
+    color: #868994;
+}
